@@ -1,0 +1,8 @@
+<h2>MRCs:</h2>
+count: {{mrcList ? mrcList.count : 'n/a'}}
+  <ul class="list">
+    <li *ngFor="let mrc of mrcList?.data">
+     <pre>{{mrc.id}}</pre>
+     <pre>{{mrc.store_name | json}}</pre>
+    </li>
+  </ul>
